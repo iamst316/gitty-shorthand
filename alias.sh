@@ -6,6 +6,8 @@ alias zzz='shutdown -h now'
 alias gaa='git add .'
 alias gpsh='git push'
 alias zz='exit'
+alias gbr='git branch'
+alais gbra='git branch -a'
 
 gplo() {
     if [ -z "$1" ]; then
