@@ -7,7 +7,7 @@ alias gaa='git add .'
 alias gpsh='git push'
 alias zz='exit'
 alias gbr='git branch'
-alais gbra='git branch -a'
+alias gbra='git branch -a'
 
 gplo() {
     if [ -z "$1" ]; then
@@ -24,3 +24,10 @@ gcm() {
     fi
 }
 
+gclo() {
+    if [ -z "$1" ]; then
+        echo "Please provide a repository url."
+    else
+        git commit -m "$1"
+    fi
+}
